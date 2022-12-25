@@ -4,7 +4,7 @@ currentYearText.innerHTML = String(new Date().getFullYear());
 
 // Sets overflow to hidden so user would not be able to scroll when the mobile navigation is open.
 const setBodyOverflow = () => {
-    if (document.body.style.overflow === 'hidden') {
+    if (header.classList.contains('nav-open')) {
         document.body.style.overflow = 'auto';
     } else {
         document.body.style.overflow = 'hidden';
@@ -15,6 +15,7 @@ const setBodyOverflow = () => {
 const header = document.querySelector('.header');
 const mobileNavButton = document.querySelector('.mobile-nav-button');
 mobileNavButton.addEventListener('click', () => {
+    setBodyOverflow()
     header.classList.toggle('nav-open');
 });
 
@@ -22,11 +23,8 @@ mobileNavButton.addEventListener('click', () => {
 const navLinks = document.querySelectorAll('.main-nav-link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
+        setBodyOverflow()
         header.classList.toggle('nav-open');
-
-        if (mobileNavButton.style.display === 'block') {
-            setBodyOverflow();
-        }
     });
 });
 

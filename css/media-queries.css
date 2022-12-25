@@ -103,6 +103,10 @@
         grid-template-columns: repeat(6, 1fr);
     }
 
+    .pricing-plan {
+        width: 85%;
+    }
+
     .cta {
         grid-template-columns: 4fr 3fr;
     }
