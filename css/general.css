@@ -23,10 +23,10 @@
 
 
 --- COLORS
-    Primary: #d97706
-    #84cc16
-    #22c55e
-    #facc15
+    Primary: #b65e00
+    Tag Vegetarian: #84cc16
+    Tag Vegan: #22c55e
+    Tag Paleo: #facc15
 
 - Tints:
     #fbf1e6
@@ -34,7 +34,8 @@
     #e4a051
 
 - Shades:
-    #c36b05
+    #a45500
+    #7f4200
 
 - Accents:
 - Grays:
@@ -42,8 +43,6 @@
     #6f6f6f (lightest gray that is allowed on #fbf1e6
     #555
     #333
-    #ddd
-
 
 --- SHADOWS
     box-shadow: 0 2.4rem 3.6rem rgba(0, 0, 0, 0.14);
@@ -77,7 +76,7 @@ html {
 
 button:focus {
     outline: none;
-    box-shadow: 0 0 0 0.3rem rgba(217, 119, 6, 0.5);
+    box-shadow: 0 0 0 0.3rem rgba(164, 85, 0, 0.5);
 }
 
 body {
@@ -155,7 +154,7 @@ body {
     font-size: 1.6rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: #c36b05;
+    color: #a45500;
     letter-spacing: 2px;
     margin-bottom: 1.6rem;
 }
@@ -176,7 +175,7 @@ body {
 
 .btn-form {
     border: none;
-    background-color: #573002;
+    background-color: #7f4200;
     color: #fbf1e6;
     align-self: end;
     padding: 1.2rem;
@@ -189,7 +188,7 @@ body {
 
 .btn-full:link,
 .btn-full:visited {
-    background-color: #d97706;
+    background-color: #b65e00;
     color: #fff;
 
     border: none;
@@ -197,7 +196,7 @@ body {
 
 .btn-full:hover,
 .btn-full:active {
-    background-color: #c36b05;
+    background-color: #a45500;
 }
 
 .btn-outline:link, .btn-outline:visited {
@@ -206,12 +205,12 @@ body {
 }
 
 .btn-outline:hover, .btn-outline:active {
-    box-shadow: inset 0 0 0 3px #ecbb83;
+    box-shadow: inset 0 0 0 2px #a45500;
 }
 
 .link:link,
 .link:visited {
-    color: #d97706;
+    color: #b65e00;
     text-decoration: underline;
     text-underline-offset: 4px;
     transition: all 0.15s ease-in-out;
@@ -219,7 +218,7 @@ body {
 
 .link:hover,
 .link:active {
-    color: #c36b05;
+    color: #a45500;
     text-decoration-color: transparent;
 }
 
@@ -241,7 +240,7 @@ body {
 .list-icon {
     width: 3rem;
     height: 3rem;
-    color: #c36b05;
+    color: #a45500;
 }
 
 /* HELPER CLASSES */

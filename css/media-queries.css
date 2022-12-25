@@ -228,6 +228,12 @@
         width: 100%;
     }
 
+    .logos {
+        flex-wrap: wrap;
+        gap: 3.2rem;
+        padding: 3.2rem;
+    }
+
     .step-image-box:nth-child(2) {
         grid-row: 1;
     }
@@ -256,5 +262,39 @@
     .cta-image-box {
         grid-row: 1;
         height: 32rem;
+    }
+
+    .grid-footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav-col {
+        grid-row: auto;
+        grid-column: auto;
+        margin-bottom: 2.4rem;
+    }
+
+    .address-col {
+        grid-row: 2;
+        grid-column: auto;
+    }
+
+    .logo-col {
+        grid-row: 3;
+        grid-column: span 2;
+        padding: 0 6.4rem;
+    }
+
+    .footer-logo {
+        align-self: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-bottom: 1.6rem;
+    }
+
+    .copyright {
+        text-align: center;
     }
 }

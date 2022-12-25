@@ -39,20 +39,20 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-    color: #c36b05;
+    color: #b65e00;
 }
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
     color: #fff;
     padding: 1.2rem 2.4rem;
-    background-color: #d97706;
+    background-color: #b65e00;
     border-radius: 8px;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-    background-color: #c36b05;
+    background-color: #a45500;
 }
 
 /* STICKY NAVIGATION */
@@ -151,7 +151,7 @@
 }
 
 .delivered-meals-text span {
-    color: #c36b05;
+    color: #a45500;
     font-weight: 700;
 }
 
@@ -196,7 +196,7 @@
 .step-number {
     font-size: 8.6rem;
     font-weight: 600;
-    color: #ddd;
+    color: #767676;
     margin-bottom: 1.2rem;
 }
 
@@ -252,7 +252,7 @@
 }
 
 .meal {
-    border-radius: 1.2rem;
+    border-radius: 0.8rem;
     box-shadow: 0 2.4rem 3.6rem rgba(0, 0, 0, 0.08);
     transition: all 0.15s linear;
     overflow: hidden;
@@ -327,7 +327,7 @@
 }
 
 .meal-icon {
-    color: #c36b05;
+    color: #a45500;
     font-size: 2.4rem;
 }
 
@@ -408,7 +408,7 @@
 
 .pricing-plan {
     width: 70%;
-    border-radius: 1.2rem;
+    border-radius: 0.8rem;
     padding: 4.8rem;
     position: relative;
     overflow: hidden;
@@ -449,7 +449,7 @@
 .plan-name {
     font-size: 2rem;
     font-weight: 600;
-    color: #c36b05;
+    color: #a45500;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 3.2rem;
@@ -488,7 +488,7 @@
     width: 3.2rem;
     height: 3.2rem;
     margin-bottom: 3.2rem;
-    color: #c36b05;
+    color: #b65e00;
     background-color: #fbf1e6;
     padding: 1.6rem;
     border-radius: 50%;
@@ -520,7 +520,7 @@
     grid-template-columns: 2fr 1fr;
     box-shadow: 0 2.4rem 3.6rem rgba(0, 0, 0, 0.14);
     background-image: linear-gradient(to right bottom, #e4a051, #d97706);
-    border-radius: 1.2rem;
+    border-radius: 0.8rem;
     overflow: hidden;
 }
 
