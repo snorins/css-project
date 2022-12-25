@@ -23,6 +23,7 @@ mobileNavButton.addEventListener('click', () => {
 const navLinks = document.querySelectorAll('.main-nav-link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
+
         // Sets the body overflow only if the current screen size is mobile or small tablet.
         // Otherwise, it would set overflow on large tablets and desktops which does not have mobile navigation that
         // needs to get rid of and set overflow.
@@ -37,12 +38,7 @@ navLinks.forEach(link => {
 const sectionHeroEl = document.querySelector('.section-hero');
 const observer = new IntersectionObserver((entries) => {
     const entry = entries[0];
-    // entry.isIntersecting ? document.body.classList.remove('sticky') : document.body.classList.add('sticky');
-    if (entry.isIntersecting) {
-        document.body.classList.remove('sticky');
-    } else {
-        document.body.classList.add('sticky');
-    }
+    entry.isIntersecting ? document.body.classList.remove('sticky') : document.body.classList.add('sticky');
 }, {
     root: null,
     threshold: 0,
