@@ -15,7 +15,7 @@ const setBodyOverflow = () => {
 const header = document.querySelector('.header');
 const mobileNavButton = document.querySelector('.mobile-nav-button');
 mobileNavButton.addEventListener('click', () => {
-    setBodyOverflow()
+    setBodyOverflow();
     header.classList.toggle('nav-open');
 });
 
@@ -23,7 +23,12 @@ mobileNavButton.addEventListener('click', () => {
 const navLinks = document.querySelectorAll('.main-nav-link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        setBodyOverflow()
+        // Sets the body overflow only if the current screen size is mobile or small tablet.
+        // Otherwise, it would set overflow on large tablets and desktops which does not have mobile navigation that
+        // needs to get rid of and set overflow.
+        const mobileNavButtonStyles = getComputedStyle(mobileNavButton);
+        mobileNavButtonStyles.display === 'block' && setBodyOverflow();
+
         header.classList.toggle('nav-open');
     });
 });
