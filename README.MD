@@ -1,8 +1,8 @@
 ## CSS Learning Project
 
-#### CSS learning project that is made with a design system, has a fully responsive design, and is optimized. 
+#### CSS learning project that is made with a design system, has a fully responsive design and is optimized. 
 
-Deployed on GitHub Pages - <a href="https://janisjuniors.github.io/css-project">see here</a>
+Deployed on GitHub Pages - <a href="https://snorins.github.io/css-project">see here</a>
 
 <br/>
 <p align="center">Desktop</p>
